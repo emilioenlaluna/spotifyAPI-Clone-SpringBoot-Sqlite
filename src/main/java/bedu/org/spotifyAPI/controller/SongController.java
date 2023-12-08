@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 import bedu.org.spotifyAPI.dto.CreateSongDTO;
 import bedu.org.spotifyAPI.dto.SongDTO;
 import bedu.org.spotifyAPI.service.SongService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
+@Tag(name = "Endpoint de canciones",description = "CRUD canciones")
 @RestController
 @RequestMapping("songs")
 public class SongController {
